@@ -132,7 +132,7 @@ def answer_query(question: str):
 def create_ui():
     with gr.Blocks(title="PDF Question Answering App") as demo:
         with gr.Row():
-            pdf_input = gr.File(label="Upload PDF", type="file")
+            pdf_input = gr.File(label="Upload PDF", type="filepath")
             upload_btn = gr.Button("Process PDF")
         upload_output = gr.Textbox(label="Upload Result", lines=2)
 
